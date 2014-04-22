@@ -28,25 +28,26 @@
       Ingredients:
     </td>
     <td class="checkboxes<%= if @recipe.errors[:ingredient_ids].count > 0 then 'field_with_errors' end %>" >
-      <% j = 0 %>
-      <% @ingredients.each do |ingredient| %>
+      
+      <% @ingredients.each_with_index do |ingredient, j| %>
+      
        <%= label_tag( "ingredient_ids[]", ingredient.name) %>
         <%= check_box_tag("ingredient_ids[]", ingredient.id, if  @recipe.ingredient_ids.include?(ingredient.id) then checked = true end, class: "check" + j.to_s) %>
-        <% if (j +1) % 3 == 0 %> <br /> <% end %>
+        <% if (j +1) % 4 == 0 %> <br /> <% end %>
+
        
-        <% j += 1%>
+      
       <% end %>
       <!-- </td>
       <td class="checkboxes"> -->
-        <% i = 0 %>
-        </br> Quantity:</br> 
-
-      <% @ingredients.each do |ingredient| %>
-      
-        <div class="ingredient<%= i.to_s %> hidebox">
         
-        <%= ingredient.name %> <%= text_field "quantity" , ingredient.id , value: quantity(ingredient)  %> <br />
-          <% i += 1 %>
+        </br> Quantity:</br></br> 
+
+      <% @ingredients.each_with_index do |ingredient , i| %>
+        <div class="ingredient<%= i.to_s %> hidebox">
+
+        <div class="ing_name"><%= ingredient.name.capitalize %> (<%= ingredient.unit %>)</div> <%= text_field "quantity" , ingredient.id , value: quantity(ingredient)  %> <br />
+        
         </div>
       <% end %>
 
@@ -60,6 +61,7 @@
   <tr>
     <td></td><td><%= f.submit "submit" %></td>
   </tr>
+
 
 
 

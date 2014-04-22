@@ -16,10 +16,11 @@ main {
    padding-left: 15px;
  }
 
-#flash_notice {
+#flash_notice, #flash_alert {
   background: #ff7373;
   display: inline-block;
 }
+
 
 h1 {
   font-size: 36px;
@@ -33,9 +34,22 @@ h2 {
   border-bottom: 1px solid black;
 }
 
+.loginstatus {
+  border: 2px solid  #ff7373;
+  display: inline-block;
+  padding: 5px;
+}
+.loginstatus > a {
+  padding: 5px 5px 5px 5px;
+  background: #5ccccc;
+  border-bottom: 3px solid #5ccccc;
+  margin: 5px;
+}
+
 nav a {
   display: inline-block;
   padding: 5px 20px 5px 0px;
+
 }
 
  a:hover {
@@ -116,7 +130,7 @@ tr {
 }
 
 .checkboxes {
-  width: 300px;
+  width: 400px;
 }
 .checkboxesfield_with_errors {
   width: 150px;
@@ -127,102 +141,125 @@ tr {
   background: #ff7373;
 }
 
+td input[type = text], td>textarea  {
+  width: 80%;
+}
+
+td select {
+  width: 80%;
+}
+
+
+
+.ing_name{
+  display: inline-block;
+  width: 200px;
+}
+
+
 .hidebox {
-  display:none;
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  transition: all 0.4s ease-in-out 0.2s;
+  -webkit-transition: all 0.4s ease-in-out 0.2s;
+
 }
 .check0:checked~.ingredient0 {
-  display: block;
+  height: 50px;
+opacity: 1
 }
 .check0:checked~.ingredient0{
-display: block;
-}
+  height: 50px;
+opacity: 1}
 .check1:checked~.ingredient1{
-display: block;
-}
+  height: 50px;
+opacity: 1}
 .check2:checked~.ingredient2{
-display: block;
-}
+  height: 50px;
+opacity: 1}
 .check3:checked~.ingredient3{
-display: block;
-}
+  height: 50px;
+opacity: 1}
 .check4:checked~.ingredient4{
-display: block;
-}
+  height: 50px;
+opacity: 1}
 .check5:checked~.ingredient5{
-display: block;
-}
+  height: 50px;
+opacity: 1}
 .check6:checked~.ingredient6{
-display: block;
-}
+  height: 50px;
+opacity: 1}
 .check7:checked~.ingredient7{
-display: block;
+height: 50px;
+opacity: 1;
 }
 .check8:checked~.ingredient8{
-display: block;
-}
+  height: 50px;
+opacity: 1}
 .check9:checked~.ingredient9{
-display: block;
-}
+  height: 50px;
+opacity: 1}
 .check10:checked~.ingredient10{
-display: block;
-}
+  height: 50px;
+opacity: 1}
 .check11:checked~.ingredient11{
-display: block;
-}
+  height: 50px;
+opacity: 1}
 .check12:checked~.ingredient12{
-display: block;
-}
+  height: 50px;
+opacity: 1}
 .check13:checked~.ingredient13{
-display: block;
-}
+  height: 50px;
+opacity: 1}
 .check14:checked~.ingredient14{
-display: block;
-}
+  height: 50px;
+opacity: 1}
 .check15:checked~.ingredient15{
-display: block;
-}
+  height: 50px;
+opacity: 1}
 .check16:checked~.ingredient16{
-display: block;
-}
+  height: 50px;
+opacity: 1}
 .check17:checked~.ingredient17{
-display: block;
-}
+  height: 50px;
+opacity: 1}
 .check18:checked~.ingredient18{
-display: block;
-}
+  height: 50px;
+opacity: 1}
 .check19:checked~.ingredient19{
-display: block;
-}
+  height: 50px;
+opacity: 1}
 .check20:checked~.ingredient20{
-display: block;
-}
+  height: 50px;
+opacity: 1}
 .check21:checked~.ingredient21{
-display: block;
-}
+  height: 50px;
+opacity: 1}
 .check22:checked~.ingredient22{
-display: block;
-}
+  height: 50px;
+opacity: 1}
 .check23:checked~.ingredient23{
-display: block;
-}
+  height: 50px;
+opacity: 1}
 .check24:checked~.ingredient24{
-display: block;
-}
+  height: 50px;
+opacity: 1}
 .check25:checked~.ingredient25{
-display: block;
-}
+  height: 50px;
+opacity: 1}
 .check26:checked~.ingredient26{
-display: block;
-}
+  height: 50px;
+opacity: 1}
 .check27:checked~.ingredient27{
-display: block;
-}
+  height: 50px;
+opacity: 1}
 .check28:checked~.ingredient28{
-display: block;
-}
+  height: 50px;
+opacity: 1}
 .check29:checked~.ingredient29{
-display: block;
-}
+  height: 50px;
+opacity: 1}
 .check30:checked~.ingredient30{
-display: block;
-}
+  height: 50px;
+opacity: 1}
