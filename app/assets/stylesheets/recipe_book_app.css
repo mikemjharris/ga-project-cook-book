@@ -4,6 +4,23 @@
   box-sizing:border-box;
 }
 
+body {
+
+  padding: 30px;
+  padding-left: 150px;
+ 
+}
+
+main { 
+   border-left: 10px solid #5ccccc;
+   padding-left: 15px;
+ }
+
+#flash_notice {
+  background: #ff7373;
+  display: inline-block;
+}
+
 h1 {
   font-size: 36px;
   margin: 20px 0px;
@@ -71,9 +88,7 @@ select, input[type=text] {
   display: inline-block;
 }
 
-body {
-  padding: 30px;
-}
+
 
 td:first-child {
   width: 200px;
